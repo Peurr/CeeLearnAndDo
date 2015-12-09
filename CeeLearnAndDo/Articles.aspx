@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Frontpage.Master" AutoEventWireup="true" CodeBehind="Articles.aspx.cs" Inherits="CeeLearnAndDo.Articles" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="Styles/Article.css" rel="stylesheet" />
 </asp:Content>
@@ -21,26 +22,26 @@
             <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id" DataSourceID="DataSource">
                 <ItemTemplate>
                     <article class="article-item">
-                <div class="article-image-container">
-                    <img src="Images/twitter.png" class="article-image" />
-                </div>
-                <div class="article-description-container">
-                    <div class="article-header-container">
-                        <div class="tag-container">
-                            <h2 class="tag-text"></h2>
+                        <div class="article-image-container">
+                            <img src="Images/twitter.png" class="article-image" />
                         </div>
-                        <div class="date-container">
-                            <p class="date-text">6 September 2015 - 20:56</p>
+                        <div class="article-description-container">
+                            <div class="article-header-container">
+                                <div class="tag-container">
+                                    <h2 class="tag-text"></h2>
+                                </div>
+                                <div class="date-container">
+                                    <p class="date-text">6 September 2015 - 20:56</p>
+                                </div>
+                            </div>
+                            <div class="article-title-container">
+                                <h1 class="article-title-text">Kees does not haal school awwww</h1>
+                            </div>
+                            <div class="article-introtext-container">
+                                <p class="introtext-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="article-title-container">
-                        <h1 class="article-title-text">Kees does not haal school awwww</h1>
-                    </div>
-                    <div class="article-introtext-container">
-                        <p class="introtext-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-                    </div>
-                </div>
-            </article>
+                    </article>
                 </ItemTemplate>
                 <GroupTemplate>
                     <div runat="server"></div>
@@ -75,9 +76,9 @@
                         </tr>
                     </table>
                 </LayoutTemplate>
-                
+
             </asp:ListView>
             <asp:SqlDataSource ID="DataSource" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT * FROM [Article]"></asp:SqlDataSource>
-           </div>
+        </div>
     </div>
 </asp:Content>
