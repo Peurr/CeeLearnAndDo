@@ -23,7 +23,7 @@
                 <ItemTemplate>
                     <article class="article-item">
                         <div class="article-image-container">
-                            <img src="Images/twitter.png" class="article-image" />
+                            <img src="<%# Eval("Picture") %>" class="article-image" />
                         </div>
                         <div class="article-description-container">
                             <div class="article-header-container">
@@ -31,21 +31,18 @@
                                     <h2 class="tag-text"></h2>
                                 </div>
                                 <div class="date-container">
-                                    <p class="date-text">6 September 2015 - 20:56</p>
+                                    <p class="date-text"><%# Eval("DateAdded") %></p>
                                 </div>
                             </div>
                             <div class="article-title-container">
-                                <h1 class="article-title-text">Kees does not haal school awwww</h1>
+                                <h1 class="article-title-text"><%# Eval("Title") %></h1>
                             </div>
                             <div class="article-introtext-container">
-                                <p class="introtext-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                                <p class="introtext-text"><%# Eval("Content") %></p>
                             </div>
                         </div>
                     </article>
                 </ItemTemplate>
-                <GroupTemplate>
-                    <div runat="server"></div>
-                </GroupTemplate>
                 <LayoutTemplate>
                     <table runat="server">
                         <tr runat="server">
