@@ -1,0 +1,35 @@
+/*-----------------------------Background Colors---------------------------*/
+
+.bg-yellow {
+	background-color: #F39C12 !important;
+}
+
+.bg-red {
+	background-color: #DD4B39 !important;
+}
+
+.bg-aqua {
+	background-color: #00C0EF !important;
+}
+
+.bg-green {
+	background-color: #00A65A !important;
+}
+
+/*-------------------------------------Colors-------------------------------*/
+
+.text-yellow {
+	color: #F39C12 !important;
+}
+
+.text-red {
+	color: #DD4B39 !important;
+}
+
+.text-aqua {
+	color: #00C0EF !important;
+}
+
+.text-green {
+	color: #00A65A !important;
+}

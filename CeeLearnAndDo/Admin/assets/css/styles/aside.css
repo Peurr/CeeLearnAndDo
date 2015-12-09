@@ -1,0 +1,134 @@
+/* Main */
+.main-sidebar {
+	min-height: 100%; width: 230px;
+	position: fixed;
+	top: 0px; left: 0px;
+	padding-top: 50px;
+	background-color: #222D32;
+	
+	z-index: 99;
+}
+
+/* Sidemenu */
+.sidebar {
+	height: auto;
+	padding-bottom: 10px;
+}
+
+/* Parent */
+.sidebar-menu {
+	white-space: nowrap;
+	overflow: hidden;
+	list-style-type: none;
+	
+	padding: 0; margin: 0;
+}
+
+.sidebar-menu li {
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar-menu li h3 {
+	padding: 12px 5px 12px 15px;
+	display: block;
+	position: relative;
+	
+	color: #B8C7CE;
+	text-decoration: none;
+	font-size: 13px;
+	border-left: 3px solid transparent;
+	cursor: pointer;
+}
+
+.sidebar-menu li h3 .left {
+	width: 20px;
+}
+
+.sidebar-menu li h3 .right {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -7px;
+	font-size: 14px;
+	
+	transition: all 0.3s;
+}
+
+.sidebar-menu li h3 .important {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -5px;
+	
+	background-color: #DD4B39 !important;
+	width: 14px; height: 11px; line-height: 10px;
+	border-radius: 3px;
+	text-align: center;
+	font-size: 10px;
+	color: #FFF;
+}
+
+.sidebar-menu li:hover > h3 {
+	color: #FFF;
+	background-color: #1e282c;
+	border-color: #3C8DBC;
+}
+
+.sidebar-menu li h3.active {
+	color: #FFF;
+	background-color: #1e282c;
+	border-color: #3C8DBC;
+}
+
+.main-sidebar li h3.active .right {
+	-ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+	
+	transition: all 0.3s;
+}
+
+.sidebar-menu li.header {
+	padding: 10px 5px 10px 15px;
+	display: block;
+	
+	background-color: #1A2226;
+	color: #4B646F;
+	font-size: 12px;
+	text-transform: uppercase;	
+}
+
+/* Child */
+.sidebar-menu ul {
+	background-color: #2C3B41;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar-menu ul li {
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar-menu ul li a {
+	display: block;
+	padding: 5px 5px 5px 15px;
+	color: #8AA4AF;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.sidebar-menu ul li a:hover {
+	color: #FFF;
+}
+
+.sidebar-menu ul {
+	display: none;
+}
+
+.sidebar-menu li.active ul {
+	display: block;
+}

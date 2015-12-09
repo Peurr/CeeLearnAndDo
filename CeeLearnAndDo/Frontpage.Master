@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Frontpage.master.cs" Inherits="CeeLearnAndDo.Frontpage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>CeeLearnAndDo</title>
+    <%-- STYLES FOR ALL PAGES --%>
+    <link href="Styles/ResetStyles.css" rel="stylesheet" />
+    <link href="Styles/MasterStyle.css" rel="stylesheet" />
+    <link href="Styles/Accesoires.css" rel="stylesheet" />
+
+    <%-- FONTS FOR ALL PAGES --%>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css' />
+
+    <%-- JQUERY HOSTED SCRIPTS --%>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <%-- OWN SCRIPTS --%>
+    <script src="Javascript/SlideDown.js"></script>
+
+    <%-- FONT AWESOME --%>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <script src="Javascript/buttonJumbotron.js"></script>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="all-wrapper">
+            <div class="header-wrapper">
+                <div class="line"></div>
+                <div class="header-container">
+                    <div class="header-centre">
+                        <div class="logo-container">
+                            <h1 class="logo-menu">Cee Learn And Do</h1>
+                        </div>
+                        <div class="menu-wrapper">
+                            <div class="menu-container">
+                                <ul class="menu-ul">
+                                    <li><a href="Frontpage.aspx"><i class="fa fa-home"></i>home</a></li>
+                                    <li><a href="Articles.aspx"><i class="fa fa-newspaper-o"></i>Articles</a></li>
+                                    <li><a href="References.aspx"><i class="fa fa-briefcase"></i>References</a></li>
+                                    <li><a href="qanda.aspx"><i class="fa fa-question-circle"></i>Q&A</a></li>
+                                    <li><a href="rss.aspx"><i class="fa fa-rss"></i>RSS FEED</a></li>
+                                </ul>
+                            </div>
+                            <div class="login-container">
+                                <ul class="menu-ul">
+                                    <%--placeholder hier IF ingelogd--%>
+                                    <li class="ai"><a href="Login.aspx"><i class="fa fa-sign-in"></i>log-in</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-wrapper">
+                <asp:ContentPlaceHolder ID="Content" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <div class="footer">
+                <div class="tickertape-container">
+                    <%--TICKERTAPE HIER--%>
+                </div>
+                <div class="footer-centre">
+                    <div class="footer-row">
+                        <h2 class="footer-header">Contact.</h2>
+                        <ul class="footer-menu">
+                            <li>Kaasmarkt 12</li>
+                            <li>1234 HA Medemblik
+                                <br />
+                                &nbsp;</li>
+                            <li>Telefoon: 0227-123456</li>
+                            <li>Fax: HEBBUH WE NIET</li>
+                            <li>E-mail: juspee@hotmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="footer-row">
+                        <h2 class="footer-header">About us.</h2>
+                        <p>We are 2 students from "Horizon College Alkmaar" who study web- and app development. We created this site for a school project.</p>
+                    </div>
+                    <div class="footer-row">
+                        <h2 class="footer-header">Social Media.</h2>
+                        <p>Make sure to follow us on social media to stay updated with the latest news, tips and tricks!</p>
+                        <div class="socialmedia-container">
+                            <img class="socialmedia" src="Images/facebook-icon.png" />
+                            <img class="socialmedia" src="Images/twitter.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

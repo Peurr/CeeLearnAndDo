@@ -1,0 +1,42 @@
+/*!
+ * CeeLearnAndDo by Weveloped.com
+ * Copyright © Weveloped 2015, All rights reserved
+ * Main style sheet which includes several style sheets
+!*/
+
+/* Including Twitter Bootstrap */
+@import url('bootstrap.css');
+
+/* Including FontAwesome (icons) */
+@import url('font-awesome.css');
+
+/* Including Custom Style Sheets */
+@import url('styles/extra/colors.css'); 	/* Colors */
+@import url('styles/header.css'); 			/* Header */
+@import url('styles/aside.css'); 			/* Sidebar */
+@import url('styles/content.css'); 			/* Content */
+
+/* Including Google Fonts's Open Sans */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+
+/* Including Summernote */
+@import url(summernote.css);
+
+/* Main Stlye */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #ECF0F5;
+}
+
+.wrapper {
+	min-height: 100%;
+	position: static;
+	overflow: hidden;
+}
+
+h3 {
+	padding: 0;
+	margin: 0;
+}
+

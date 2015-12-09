@@ -1,0 +1,96 @@
+﻿.reference-content-wrapper {
+    width: 1200px;
+    min-height: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.page-title-container {
+    width:100%;
+    margin-top:20px;
+    margin-bottom:20px;
+    background-color:#f8f8f8;   
+}
+
+/*#region CARD */
+
+.reference-card-wrapper {
+    width: 100%;
+}
+
+.reference-card-container {
+    width: 100%;
+    height: 330px;
+    background-color: #f8f8f8;
+    margin-bottom:20px;
+}
+
+.card-content {
+    height:inherit;
+    margin-left:190px;
+    margin-right:0;
+    overflow:hidden;
+}
+
+.card-sidebar-container {
+    width:190px;
+    height:inherit;
+    overflow:hidden;
+    float:left;
+}
+
+.card-sidebar {
+    margin:10px 0 0 20px;
+}
+
+.card-image {
+    width:150px;
+    height:150px;
+    margin-top:10px;
+}
+
+/*#endregion */
+
+/*#region TEXT */
+
+.page-title {
+    font-size: 26px;
+    font-weight: 300;
+    padding:10px 0 10px 10px;
+}
+
+.card-sidebar p {
+    margin-top:10px;
+}
+
+.company-name {
+    font-size:20px;
+    font-weight:400;
+    color:#353535; 
+}
+
+.subject {
+    color:#353535;
+}
+
+.card-date {
+    color:#9a9a9a;
+    font-size:12px;
+}
+
+.score {
+    margin-top:20px;
+    color:#9a9a9a;
+}
+
+.ding {
+    line-height:25px;
+    color:#9d0303;
+}
+
+.reference-text {
+    margin:20px;
+    line-height:22px;
+}
+
+/*#endregion */

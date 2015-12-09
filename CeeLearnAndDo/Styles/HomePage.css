@@ -1,0 +1,157 @@
+﻿/*#region jumbotron */
+
+.jumbotron-container {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    background-image: url('../Images/free-city-wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-bottom: solid 1px #dedede;
+}
+
+.introtext-container {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 110px;
+    margin-bottom: 30px;
+}
+
+.button {
+    margin: 0 auto;
+    height: 50px;
+    width: 200px;
+    border: solid 1px #2c968f;
+    cursor: pointer;
+    transition: background-color 300ms linear;
+}
+
+    .button:hover {
+        background-color: #2c968f;
+    }
+
+/*#endregion */
+
+/*#region quick info */
+
+.section1 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.quick-info-wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.quick-info-container {
+    overflow: auto;
+    display: table;
+    margin: 0 auto;
+}
+
+.quick-info {
+    float: left;
+    width: 220px;
+    height: 350px;
+    background-color: #efefef;
+    cursor: pointer;
+    border: solid 1px #c7c7c7;
+}
+
+    .quick-info:nth-child(3), .quick-info:nth-child(2), .quick-info:first-child {
+        margin-right: 80px;
+    }
+
+.quick-info-image-container {
+    width: 200px;
+    margin: 10px;
+}
+
+.quick-info-image {
+    width: inherit;
+    height: inherit;
+    margin-right: 0;
+}
+
+.quick-info-header {
+    margin-top: 10px;
+    font-size: 26px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: #3e3e3e;
+    text-shadow: 1px 1px 1px rgba(75, 74, 74, 0.24);
+}
+
+.quick-info-paragraph {
+    font-size: 16px;
+    margin: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #656565;
+}
+
+/*#endregion */
+
+.mail-a-friend-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.mail-a-friend-container {
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 1200px;
+    padding: 15px;
+}
+
+.mail-a-friend {
+    border: solid 1px #dedede;
+    display: table;
+    padding: 15px;
+    background-color: #e0e0e0;
+}
+
+/*#region text */
+
+.learnmore {
+    text-align: center;
+    margin-top: 16px;
+    color: #ffffff;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.logo-jumbotron {
+    font-family: 'Indie Flower', cursive;
+    font-size: 62px;
+    color: #bbb5b5;
+}
+
+.introtext-container p {
+    font-family: 'Indie Flower', cursive;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.maf-h1 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #424242;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/*#endregion */
+
+.fa-fw {
+    font-size: 150px;
+    margin-right: 0;
+    color: #212121;
+}

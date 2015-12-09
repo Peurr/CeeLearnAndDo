@@ -1,0 +1,84 @@
+﻿.all-wrapper-loginpage  {
+    margin:0 500px auto;
+    margin-top:20px;
+    display:table;
+    height:400px;
+}
+
+fieldset{
+    border:solid 1px red;
+    margin:5px;
+    background-color: #efefef;
+    border:solid 1px #c7c7c7;
+}
+
+legend {
+    margin:10px;
+    font-size:26px;
+    padding:0 5px 0 5px;
+    color:#2f2f2f;
+    text-transform:uppercase;
+}
+
+/*#region login form */
+
+table {
+    margin: 40px;
+    float: left;
+    color:#272727;
+}
+
+td {
+    width: 150px;
+}
+
+.td-length {
+    width:250px;
+}
+
+tr {
+    line-height: 3;
+}
+
+.inputfield {
+    width: 100%;
+    border: solid 1px #c7c7c7;
+    height: 28px;
+    font-size: 16px;
+}
+
+.link {
+    color: #2883a0;
+    text-decoration: none;
+}
+
+    .link:hover {
+        text-decoration: underline;
+    }
+
+/*#endregion */
+
+.login-button-container {
+    position:relative;
+    height:150px;
+    width:200px;
+    float:left;
+    margin-left:50px;
+}
+
+.button {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    text-transform: uppercase;
+    display:block;
+    border:solid 1px #2c968f;
+    transition: background-color 300ms linear, color 300ms linear;  
+    cursor:pointer;
+    font-size:14px;
+}
+
+.button:hover {
+    background-color:#2c968f;
+    color:white;
+}

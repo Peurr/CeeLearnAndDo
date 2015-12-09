@@ -1,0 +1,21 @@
+﻿.normal-textbox {
+    outline:none;
+    border:solid 1px #dedede;
+    width:300px;
+    height:30px;
+    display:block;
+    padding:5px;
+    box-sizing:border-box;
+    margin-bottom:10px;
+}
+
+.textarea {
+    height:100px;
+    max-height:150px;
+    resize:none;
+    width:400px;
+}
+
+.normal-button {
+
+}
