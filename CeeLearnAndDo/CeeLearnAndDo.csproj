@@ -71,7 +71,6 @@
       <DependentUpon>WebFormsIdentity.mdf</DependentUpon>
     </Content>
     <Content Include="Articles.aspx" />
-    <Content Include="Articles1.aspx" />
     <Content Include="Images\1440533340_0602-question-mark.png" />
     <Content Include="Images\city-wallpaper-18.png" />
     <Content Include="Images\city-wallpaper.jpg" />
@@ -121,13 +120,6 @@
     </Compile>
     <Compile Include="Articles.aspx.designer.cs">
       <DependentUpon>Articles.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Articles1.aspx.cs">
-      <DependentUpon>Articles1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Articles1.aspx.designer.cs">
-      <DependentUpon>Articles1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Frontpage.aspx.cs">
       <DependentUpon>Frontpage.aspx</DependentUpon>
