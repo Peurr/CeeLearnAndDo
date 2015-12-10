@@ -160,15 +160,8 @@
     <Content Include="Admin\assets\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Admin\assets\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Admin\assets\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="Admin\Web.config" />
-    <Content Include="Web - Copy.config">
+    <Content Include="Admin\Web.config">
       <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Web - Copy.Debug.config">
-      <DependentUpon>Web - Copy.config</DependentUpon>
-    </Content>
-    <Content Include="Web - Copy.Release.config">
-      <DependentUpon>Web - Copy.config</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
@@ -283,7 +276,9 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="web.config" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
