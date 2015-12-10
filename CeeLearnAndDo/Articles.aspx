@@ -19,7 +19,7 @@
             </ul>
         </div>
         <div class="article-holder">
-            <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id" DataSourceID="DataSource">
+            <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id" DataSourceID="DataSource" OnSelectedIndexChanged="ListView1_SelectedIndexChanged">
                 <ItemTemplate>
                     <article class="article-item">
                         <div class="article-image-container">
@@ -45,23 +45,6 @@
                 </ItemTemplate>
                 <LayoutTemplate>
                     <table runat="server">
-                        <tr runat="server">
-                            <td runat="server">
-                                <table id="itemPlaceholderContainer" runat="server" border="0" style="">
-                                    <tr runat="server" style="">
-                                        <th runat="server">Id</th>
-                                        <th runat="server">AuthorId</th>
-                                        <th runat="server">Title</th>
-                                        <th runat="server">Picture</th>
-                                        <th runat="server">Content</th>
-                                        <th runat="server">File</th>
-                                        <th runat="server">DateAdded</th>
-                                    </tr>
-                                    <tr id="itemPlaceholder" runat="server">
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
                         <tr runat="server">
                             <td runat="server" style="">
                                 <asp:DataPager ID="DataPager1" runat="server">
