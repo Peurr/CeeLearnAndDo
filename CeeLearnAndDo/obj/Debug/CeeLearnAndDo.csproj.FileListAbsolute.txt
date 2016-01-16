@@ -38,4 +38,6 @@ C:\Users\Peer\Documents\GitHub\CeeLearnAndDo\CeeLearnAndDo\bin\Microsoft.Owin.Se
 C:\Users\Peer\Documents\GitHub\CeeLearnAndDo\CeeLearnAndDo\bin\Newtonsoft.Json.xml
 C:\Users\Peer\Documents\GitHub\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.dll
 C:\Users\Peer\Documents\GitHub\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.pdb
+C:\Users\Peer\Documents\GitHub\CeeLearnAndDo\CeeLearnAndDo\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Peer\Documents\GitHub\CeeLearnAndDo\CeeLearnAndDo\bin\Microsoft.Owin.Host.SystemWeb.xml
 C:\Users\Peer\Documents\GitHub\CeeLearnAndDo\CeeLearnAndDo\obj\Debug\CeeLearnAndDo.csprojResolveAssemblyReference.cache

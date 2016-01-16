@@ -19,8 +19,8 @@
             </ul>
         </div>
         <div class="article-holder">
-            <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id" DataSourceID="DataSource" OnSelectedIndexChanged="ListView1_SelectedIndexChanged">
-                <ItemTemplate>
+            <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id" DataSourceID="DataSource">
+                <ItemTemplate runat="server">
                     <article class="article-item">
                         <div class="article-image-container">
                             <img src="<%# Eval("Picture") %>" class="article-image" />
