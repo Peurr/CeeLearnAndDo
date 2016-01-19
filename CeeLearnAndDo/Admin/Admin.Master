@@ -35,7 +35,7 @@
                             </ul>
                         </li>
                         <li>
-                            <h3><i class="left fa fa-file"></i>Projects<i class="right fa fa-angle-left"></i></h3>
+                            <h3><i class="left fa fa-file"></i>References<i class="right fa fa-angle-left"></i></h3>
                             <ul>
                                 <li><a href="References.aspx?action=overview">All References</a></li>
                                 <li><a href="References.aspx?action=new">Add New</a></li>
@@ -43,22 +43,7 @@
                             </ul>
                         </li>
                         <li onclick="javascript:location.href='Questions.aspx?action=overview'">
-                            <h3><i class="left fa fa-comment"></i>Questions<span class="important">3</span></h3>
-                        </li>
-                        <li>
-                            <h3><i class="left fa fa-user"></i>Users<i class="right fa fa-angle-left"></i></h3>
-                            <ul>
-                                <li><a href="Users.aspx?action=overview">All Users</a></li>
-                                <li><a href="Users.aspx?action=new">Add New</a></li>
-                                <li><a href="User.aspx?action=profile">My Profile</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h3><i class="left fa fa-cog"></i>Settings<i class="right fa fa-angle-left"></i></h3>
-                            <ul>
-                                <li><a href="Settings.aspx?action=general">General</a></li>
-                                <li><a href="Settings.aspx?action=discussion">Discussion</a></li>
-                            </ul>
+                            <h3><i class="left fa fa-comment"></i>Questions</h3>
                         </li>
                     </ul>
                 </section>

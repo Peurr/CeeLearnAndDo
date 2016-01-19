@@ -131,7 +131,10 @@
     <Content Include="Admin\assets\js\scripts\settings.js" />
     <Content Include="Admin\assets\js\summernote.js" />
     <Content Include="Admin\assets\js\summernote.min.js" />
+    <Content Include="Admin\Categories.aspx" />
     <Content Include="Admin\Index.aspx" />
+    <Content Include="Admin\Questions.aspx" />
+    <Content Include="Admin\References.aspx" />
     <Content Include="App_Data\WebFormsIdentity.mdf" />
     <Content Include="App_Data\WebFormsIdentity_log.ldf">
       <DependentUpon>WebFormsIdentity.mdf</DependentUpon>
@@ -198,6 +201,13 @@
     <Compile Include="Admin\Articles.aspx.designer.cs">
       <DependentUpon>Articles.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Categories.aspx.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Categories.aspx.designer.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Database.cs" />
     <Compile Include="Admin\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -205,6 +215,20 @@
     </Compile>
     <Compile Include="Admin\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Questions.aspx.cs">
+      <DependentUpon>Questions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Questions.aspx.designer.cs">
+      <DependentUpon>Questions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\References.aspx.cs">
+      <DependentUpon>References.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\References.aspx.designer.cs">
+      <DependentUpon>References.aspx</DependentUpon>
     </Compile>
     <Compile Include="Articles.aspx.cs">
       <DependentUpon>Articles.aspx</DependentUpon>

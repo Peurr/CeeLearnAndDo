@@ -6,63 +6,44 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Microsoft.AspNet.Identity;
 
 namespace CeeLearnAndDo.Admin
 {
-    public partial class Articles : System.Web.UI.Page
+    public partial class References : System.Web.UI.Page
     {
         protected string pageTitle;
         protected string contentTitle;
         protected string breadCrumb;
 
-        protected SqlConnection c = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
-
         protected int idEdit;
-
         public string editContent;
+
+        protected SqlConnection c = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
 
         protected void Page_Load(object sender, EventArgs e)
         {
             switch (Request.QueryString["action"])
             {
                 case "new":
-                    pageTitle = "Add a new Article - CeeLearnAndDo Admin Panel";
-                    contentTitle = "New <small>Add a new article</small>";
-                    breadCrumb = "<li class='active'>Articles</li><li class='active'>New</li>";
+                    pageTitle = "Add a new Reference - CeeLearnAndDo Admin Panel";
+                    contentTitle = "New <small>Add a new reference</small>";
+                    breadCrumb = "<li class='active'>References</li><li class='active'>New</li>";
                     break;
                 case "overview":
-                    pageTitle = "Overview of all Articles - CeeLearnAndDo Admin Panel";
-                    contentTitle = "Overview <small>View all articles</small>";
-                    breadCrumb = "<li class='active'>Articles</li><li class='active'>Overview</li>";
+                    pageTitle = "Overview of all References - CeeLearnAndDo Admin Panel";
+                    contentTitle = "Overview <small>View all references</small>";
+                    breadCrumb = "<li class='active'>References</li><li class='active'>Overview</li>";
                     break;
                 case "edit":
-                    pageTitle = "Edit an existing Article - CeeLearnAndDo Admin Panel";
-                    contentTitle = "Edit <small>Edit an article</small>";
-                    breadCrumb = "<li class='active'>Articles</li><li class='active'>Edit</li>";
+                    pageTitle = "Edit an existing Reference - CeeLearnAndDo Admin Panel";
+                    contentTitle = "Edit <small>Edit an References</small>";
+                    breadCrumb = "<li class='active'>References</li><li class='active'>Edit</li>";
                     idEdit = Convert.ToInt32(Request.QueryString["Id"]);
 
-                        showEditData();
+                    showEditData();
 
                     break;
             }
-
-            displayCategories();
-        }
-
-        protected void displayCategories()
-        {
-            DataTable dt = new DataTable();
-
-            string query = "SELECT * FROM Categories";
-            SqlDataAdapter adpt = new SqlDataAdapter(query, c);
-            adpt.Fill(dt);
-
-            categoryList.DataSource = dt;
-            categoryList.DataBind();
-            categoryList.DataTextField = "CatName";
-            categoryList.DataValueField = "Id";
-            categoryList.DataBind();
         }
 
         protected void showEditData()
@@ -74,11 +55,10 @@ namespace CeeLearnAndDo.Admin
 
             SqlDataReader r = cmd.ExecuteReader();
 
-            while(r.Read())
+            while (r.Read())
             {
                 EditTitle.Text = r["Title"].ToString();
                 editContent = r["Content"].ToString();
-                editTags.Text = r["Tags"].ToString();     
             }
 
             c.Close();
@@ -89,27 +69,19 @@ namespace CeeLearnAndDo.Admin
             c.Open();
 
             string titleInput = txtTitle.Text;
-            string pictureInput = "NONE";
-            string tagsInput = txtTags.Text;
             string contentInput = HiddenField1.Value;
-            int categoryInput = Convert.ToInt32(categoryList.SelectedValue);
-            string authorInput = User.Identity.GetUserId();
             string dateInput = Convert.ToString(DateTime.Now);
 
-            string query = "INSERT INTO Article VALUES(@AuthorId, @Title, @Picture, @Content, @CategoryId, @Tags, @DateAdded)";
+            string query = "INSERT INTO Reference VALUES(@Title, @Content, @DateAdded)";
             SqlCommand cmd = new SqlCommand(query, c);
-            cmd.Parameters.AddWithValue("@AuthorId", authorInput);
             cmd.Parameters.AddWithValue("@Title", titleInput);
-            cmd.Parameters.AddWithValue("@Picture", pictureInput);
             cmd.Parameters.AddWithValue("@Content", contentInput);
-            cmd.Parameters.AddWithValue("@CategoryId", categoryInput);
-            cmd.Parameters.AddWithValue("@Tags", tagsInput);
             cmd.Parameters.AddWithValue("@DateAdded", dateInput);
 
 
             cmd.ExecuteNonQuery();
             c.Close();
-            Response.Redirect("~/Admin/Articles.aspx?action=overview");
+            Response.Redirect("~/Admin/References.aspx?action=overview");
         }
 
         protected void btnEdit_Click(object sender, EventArgs e)
@@ -117,23 +89,19 @@ namespace CeeLearnAndDo.Admin
             c.Open();
 
             string titleEditInput = EditTitle.Text;
-            string tagsEditInput = editTags.Text;
             string contentEditInput = HiddenField2.Value;
             //int categoryInput = Convert.ToInt32(categoryList.SelectedValue);
 
-            string query = "UPDATE Article SET Title = @Title, Content = @Content, Tags = @Tags WHERE Id=@Id";
+            string query = "UPDATE Reference SET Title = @Title, Content = @Content WHERE Id=@Id";
 
             SqlCommand cmd = new SqlCommand(query, c);
             cmd.Parameters.AddWithValue("@Id", Convert.ToInt32(idEdit));
             cmd.Parameters.AddWithValue("@Title", titleEditInput);
             cmd.Parameters.AddWithValue("@Content", contentEditInput);
-            //cmd.Parameters.AddWithValue("@CategoryId", categoryInput);
-            cmd.Parameters.AddWithValue("@Tags", tagsEditInput);
-
             cmd.ExecuteNonQuery();
             showEditData();
             c.Close();
-            Response.Redirect("~/Admin/Articles.aspx?action=overview");
+            Response.Redirect("~/Admin/References.aspx?action=overview");
         }
 
         protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
@@ -142,13 +110,13 @@ namespace CeeLearnAndDo.Admin
             GridViewRow row = (GridViewRow)GridView1.Rows[e.RowIndex];
             string Id = row.Cells[1].Text;
 
-            string query = "DELETE FROM Article WHERE Id=" + Id;
+            string query = "DELETE FROM Reference WHERE Id=" + Id;
 
             SqlCommand cmd = new SqlCommand(query, c);
             cmd.ExecuteNonQuery();
 
             c.Close();
-            Response.Redirect("~/Admin/Articles.aspx?action=overview");
+            Response.Redirect("~/Admin/References.aspx?action=overview");
         }
     }
 }

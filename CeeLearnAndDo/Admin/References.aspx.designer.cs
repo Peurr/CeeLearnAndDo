@@ -10,7 +10,7 @@
 namespace CeeLearnAndDo.Admin {
     
     
-    public partial class Articles {
+    public partial class References {
         
         /// <summary>
         /// GridView1 control.
@@ -22,13 +22,13 @@ namespace CeeLearnAndDo.Admin {
         protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// DataSource control.
+        /// SqlDataSource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource DataSource;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource;
         
         /// <summary>
         /// txtTitle control.
@@ -58,24 +58,6 @@ namespace CeeLearnAndDo.Admin {
         protected global::System.Web.UI.WebControls.Button butPublish;
         
         /// <summary>
-        /// categoryList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList categoryList;
-        
-        /// <summary>
-        /// txtTags control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTags;
-        
-        /// <summary>
         /// EditTitle control.
         /// </summary>
         /// <remarks>
@@ -101,14 +83,5 @@ namespace CeeLearnAndDo.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnEdit;
-        
-        /// <summary>
-        /// editTags control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox editTags;
     }
 }
