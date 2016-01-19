@@ -34,6 +34,7 @@
     background-color: #fff;
     float: left;
     margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .article-description-container {
@@ -70,7 +71,7 @@
 }
 
 .tag-container {
-    width: 100px;
+    padding:0 20px;
     height: inherit;
     margin-left: 20px;
     background-color: #2f2c2c;

@@ -20,10 +20,11 @@
 
     <%-- OWN SCRIPTS --%>
     <script src="Javascript/SlideDown.js"></script>
+    <script src="Javascript/TickerTape.js"></script>
 
     <%-- FONT AWESOME --%>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-    
+
     <asp:ContentPlaceHolder ID="head" runat="server">
         <script src="Javascript/buttonJumbotron.js"></script>
     </asp:ContentPlaceHolder>
@@ -63,7 +64,19 @@
             </div>
             <div class="footer">
                 <div class="tickertape-container">
-                    <%--TICKERTAPE HIER--%>
+                    <div class="mask">
+                        <ul id="tickertape">
+                            <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
+                                <ItemTemplate>
+                                    <li runat="server">
+                                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("DateAdded") %>' /></a>
+                                        <a href="#"><asp:Label ID="Label2" runat="server" Text='<%# Eval("Title") %>' /></a>
+                                    </li>
+                                </ItemTemplate>
+                            </asp:ListView>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT TOP 10 [Title], [DateAdded] FROM [Article]"></asp:SqlDataSource>
+                        </ul>
+                    </div>
                 </div>
                 <div class="footer-centre">
                     <div class="footer-row">
