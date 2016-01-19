@@ -224,10 +224,11 @@
 	color: #DF0101;
 }
 
-.content-wrapper .content .add .actions input {
-	margin-top: 10px; margin-right: 10px;
+.content-wrapper .content .add .actions .mtopbut {
+	margin-right: 10px;
 	float: right;
-	height: 30px;	
+	height: 30px;
+    margin-top: 10px;
 }
 
 .content-wrapper .content .add .actions a.add {
@@ -237,4 +238,9 @@
 
 .content-wrapper .content .add .actions a.add:hover {
 	text-decoration: underline;
+}
+
+.content-wrapper .content .add .postbox .dropdownlist-margin {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
