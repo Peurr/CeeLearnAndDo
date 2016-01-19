@@ -17,5 +17,16 @@
 }
 
 .normal-button {
+    border:none;
+    padding:10px 20px;
+    background-color:#2c968f;
+    border-radius:3px;
+    box-shadow: -2px -2px 2px #206c67 inset;
+    color:#fefefe;
+    font-size:16px;
+    cursor:pointer;
+}
 
+.normal-button:hover {
+    box-shadow: -2px -2px 5px #206c67 inset;
 }

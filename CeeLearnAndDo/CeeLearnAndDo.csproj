@@ -66,6 +66,25 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\Articles.aspx" />
+    <Content Include="Admin\assets\css\bootstrap.css" />
+    <Content Include="Admin\assets\css\font-awesome.css" />
+    <Content Include="Admin\assets\css\style.css" />
+    <Content Include="Admin\assets\css\styles\aside.css" />
+    <Content Include="Admin\assets\css\styles\content.css" />
+    <Content Include="Admin\assets\css\styles\extra\colors.css" />
+    <Content Include="Admin\assets\css\styles\header.css" />
+    <Content Include="Admin\assets\css\summernote.css" />
+    <Content Include="Admin\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Admin\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Admin\assets\js\bootstrap.js" />
+    <Content Include="Admin\assets\js\jquery.min.js" />
+    <Content Include="Admin\assets\js\scripts\dropdown-menu.js" />
+    <Content Include="Admin\assets\js\scripts\settings.js" />
+    <Content Include="Admin\assets\js\summernote.js" />
+    <Content Include="Admin\assets\js\summernote.min.js" />
+    <Content Include="Admin\Index.aspx" />
+    <Content Include="Admin\Settings.aspx" />
     <Content Include="App_Data\WebFormsIdentity.mdf" />
     <Content Include="App_Data\WebFormsIdentity_log.ldf">
       <DependentUpon>WebFormsIdentity.mdf</DependentUpon>
@@ -87,6 +106,17 @@
     <Content Include="Login.aspx" />
     <Content Include="packages.config" />
     <Content Include="Frontpage.Master" />
+    <Content Include="Admin\Admin.Master" />
+    <Content Include="Admin\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Admin\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Admin\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Admin\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Admin\assets\fonts\FontAwesome.otf" />
+    <Content Include="Admin\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Admin\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Admin\assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Admin\assets\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Admin\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -114,6 +144,34 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Articles.aspx.cs">
+      <DependentUpon>Articles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Articles.aspx.designer.cs">
+      <DependentUpon>Articles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Articles.aspx.cs">
       <DependentUpon>Articles.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
