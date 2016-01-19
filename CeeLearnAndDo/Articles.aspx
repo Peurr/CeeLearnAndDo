@@ -1,11 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Frontpage.Master" AutoEventWireup="true" CodeBehind="Articles.aspx.cs" Inherits="CeeLearnAndDo.Articles" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <%-- STYLES --%>
     <link href="Styles/Article.css" rel="stylesheet" />
-
-    <%-- JAVASCRIPT --%>
-    <script src="Javascript/MaxCharacters.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div class="article-content-wrapper">
@@ -24,7 +20,7 @@
         </div>
         <div class="article-holder">
             <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id" DataSourceID="DataSource">
-                <ItemTemplate>
+                <ItemTemplate runat="server">
                     <article class="article-item">
                         <div class="article-image-container">
                             <img src="<%# Eval("Picture") %>" class="article-image" />
@@ -32,7 +28,7 @@
                         <div class="article-description-container">
                             <div class="article-header-container">
                                 <div class="tag-container">
-                                    <h2 class="tag-text"><%# Eval("Category") %></h2>
+                                    <h2 class="tag-text"></h2>
                                 </div>
                                 <div class="date-container">
                                     <p class="date-text"><%# Eval("DateAdded") %></p>
@@ -50,7 +46,7 @@
                 <LayoutTemplate>
                     <table runat="server">
                         <tr runat="server">
-                            <td id="itemPlaceholder" runat="server" style="">
+                            <td runat="server" style="">
                                 <asp:DataPager ID="DataPager1" runat="server">
                                     <Fields>
                                         <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowLastPageButton="True" />
@@ -60,8 +56,9 @@
                         </tr>
                     </table>
                 </LayoutTemplate>
+
             </asp:ListView>
-            <asp:SqlDataSource ID="DataSource" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT Article.*, Categories.Category FROM [Article] INNER JOIN Categories ON Article.CatId=Categories.CatId"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="DataSource" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT * FROM [Article]"></asp:SqlDataSource>
         </div>
     </div>
 </asp:Content>
