@@ -24,17 +24,12 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td><a class="link" href="#">Forgot password?</a></td>
-                    </tr>
-                    <tr>
-                        <td></td>
                         <td class="td-length">
                             <asp:Button runat="server" CssClass="button" OnClick="SignIn" Text="Log in" />
                         </td>
                     </tr>
                 </table>
             </asp:PlaceHolder>
-            Are you a new user? <a href="Register.aspx" class="link">Register here!</a>
         </fieldset>
     </div>
 </asp:Content>

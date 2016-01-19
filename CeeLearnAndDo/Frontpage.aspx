@@ -46,13 +46,6 @@
                     <p class="quick-info-paragraph">Browse all articles on our website on one web page.</p>
 
                 </div>
-                <div class="quick-info">
-                    <div class="quick-info-image-container fa-fw">
-                        <i class="fa fa-shopping-cart"></i>
-                    </div>
-                    <h3 class="quick-info-header">Shopping Cart</h3>
-                    <p class="quick-info-paragraph">Browse all articles on our website on one web page.</p>
-                </div>
             </div>
         </div>
     </section>
@@ -62,7 +55,7 @@
                 <h1 class="maf-h1">Mail-a-friend!</h1>
                 <asp:TextBox ID="txt_email" runat="server" CssClass="normal-textbox" Placeholder="Send e-mail to example@hotmail.com"></asp:TextBox>
                 <asp:TextBox ID="txt_bericht" TextMode="MultiLine" runat="server" CssClass="normal-textbox textarea" Placeholder="Personal message to your friend &nbsp;&nbsp; Use HTML markup!"></asp:TextBox>
-                <asp:Button ID="btn_verstuurMail" runat="server" Text="Button" CssClass="normal-button" />
+                <asp:Button ID="btn_verstuurMail" runat="server" Text="Send" CssClass="normal-button" OnClick="btn_verstuurMail_Click" />
             </div>
         </div>
     </section>
