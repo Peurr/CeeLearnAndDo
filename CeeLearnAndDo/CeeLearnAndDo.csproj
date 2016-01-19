@@ -215,7 +215,6 @@
     </Compile>
     <Compile Include="Admin\Settings.aspx.cs">
       <DependentUpon>Settings.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\Settings.aspx.designer.cs">
       <DependentUpon>Settings.aspx</DependentUpon>
