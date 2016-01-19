@@ -55,7 +55,7 @@
                 <h1 class="maf-h1">Mail-a-friend!</h1>
                 <asp:TextBox ID="txt_email" runat="server" CssClass="normal-textbox" Placeholder="Send e-mail to example@hotmail.com"></asp:TextBox>
                 <asp:TextBox ID="txt_bericht" TextMode="MultiLine" runat="server" CssClass="normal-textbox textarea" Placeholder="Personal message to your friend &nbsp;&nbsp; Use HTML markup!"></asp:TextBox>
-                <asp:Button ID="btn_verstuurMail" runat="server" Text="Send e-mail" CssClass="normal-button" />
+                <asp:Button ID="btn_verstuurMail" runat="server" Text="Send" CssClass="normal-button" OnClick="btn_verstuurMail_Click" />
             </div>
         </div>
     </section>

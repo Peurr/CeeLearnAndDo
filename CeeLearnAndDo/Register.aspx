@@ -14,7 +14,7 @@
                 <tr>
                     <td>Username</td>
                     <td class="td-length">
-                        <asp:TextBox ID="UserName" CssClass="inputfield" runat="server"></asp:TextBox></td>
+                        <asp:TextBox ID="UserName" CssClass="normal-textbox login-control" runat="server"></asp:TextBox></td>
                 </tr>
                 <%-- 
                 <tr>
@@ -25,12 +25,12 @@
                 <tr>
                     <td>Password</td>
                     <td class="td-length">
-                        <asp:TextBox ID="Password" TextMode="Password" CssClass="inputfield" runat="server"></asp:TextBox></td>
+                        <asp:TextBox ID="Password" TextMode="Password" CssClass="normal-textbox login-control" runat="server"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>Password again</td>
                     <td class="td-length">
-                        <asp:TextBox ID="ConfirmPassword" TextMode="Password" CssClass="inputfield" runat="server"></asp:TextBox></td>
+                        <asp:TextBox ID="ConfirmPassword" TextMode="Password" CssClass="normal-textbox" runat="server"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td></td>
